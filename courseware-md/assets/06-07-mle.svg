@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430">
+  <style>
+    .bg{fill:#fbfcff}.title{font:700 24px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#162033}.sub{font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#4b5870}.label{font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#263348}.small{font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#5b667a}.axis{stroke:#9aa7bc;stroke-width:1.3}.curve{fill:none;stroke:#2f6fed;stroke-width:3}.dash{stroke:#ea4335;stroke-width:1.8;stroke-dasharray:5 5}.point{fill:#ea4335}.box{fill:#fff;stroke:#d7dfef;stroke-width:1.5;rx:16}.formula{font:600 18px 'SFMono-Regular','Menlo','Consolas',monospace;fill:#263348}.arrow{stroke:#34a853;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#34a853"/></marker></defs>
+  <rect class="bg" width="1100" height="430"/>
+  <text class="title" x="40" y="44">最大似然估计 MLE：让已发生数据“最像是这样来的”</text>
+  <text class="sub" x="40" y="72">例：硬币抛 10 次，正面 8 次。不同 p 都可能产生这个结果，但 p=0.8 的解释力最大。</text>
+
+  <rect class="box" x="55" y="105" width="520" height="255"/>
+  <text class="label" x="85" y="138">似然函数 L(p)=p⁸(1-p)²</text>
+  <line class="axis" x1="105" y1="310" x2="525" y2="310"/><line class="axis" x1="105" y1="310" x2="105" y2="155"/>
+  <path class="curve" d="M115 309 C160 307,220 292,275 245 C330 190,390 160,440 185 C490 215,515 275,520 308"/>
+  <line class="dash" x1="440" y1="185" x2="440" y2="315"/>
+  <circle class="point" cx="440" cy="185" r="6"/>
+  <text class="small" x="427" y="335">p=0.8</text>
+  <text class="small" x="95" y="335">0</text><text class="small" x="515" y="335">1</text>
+  <text class="small" x="255" y="350">参数 p</text>
+  <text class="small" x="70" y="170">似然</text>
+
+  <rect class="box" x="625" y="105" width="420" height="255"/>
+  <text class="label" x="655" y="138">从概率假设到损失函数</text>
+  <text class="small" x="665" y="178">1. 假设数据怎么生成：Bernoulli / Normal / Categorical</text>
+  <path class="arrow" d="M690 195 C730 215,760 215,800 195"/>
+  <text class="small" x="665" y="235">2. 写出观测数据的似然 L(θ)</text>
+  <path class="arrow" d="M690 252 C730 272,760 272,800 252"/>
+  <text class="small" x="665" y="292">3. 最大化 log L(θ)，等价于最小化 -log L(θ)</text>
+  <text class="formula" x="665" y="330">loss = - log likelihood</text>
+
+  <text class="formula" x="85" y="397">MLE = Maximum Likelihood Estimation　　 NLL = Negative Log-Likelihood</text>
+</svg>

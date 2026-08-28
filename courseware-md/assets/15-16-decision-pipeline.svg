@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">工业模型：预测分数必须转成可执行决策</text>
+  <rect class="card" x="45" y="75" width="830" height="295"/>
+  <rect x="75" y="145" width="115" height="62" rx="12" fill="#eff6ff" stroke="#3b82f6"/><text class="small" x="102" y="172">特征 X</text><text class="small" x="95" y="194">用户/商品</text>
+  <path class="axis arrow" d="M195 176 L270 176"/>
+  <rect x="270" y="145" width="120" height="62" rx="12" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="303" y="172">模型</text><text class="small" x="296" y="194">输出分数</text>
+  <path class="axis arrow" d="M395 176 L470 176"/>
+  <rect x="470" y="145" width="120" height="62" rx="12" fill="#fff7ed" stroke="#f59e0b"/><text class="small" x="501" y="172">阈值</text><text class="small" x="489" y="194">成本约束</text>
+  <path class="axis arrow" d="M595 176 L670 176"/>
+  <rect x="670" y="145" width="135" height="62" rx="12" fill="#fef2f2" stroke="#ef4444"/><text class="small" x="700" y="172">业务动作</text><text class="small" x="695" y="194">拦截/补贴/召回</text>
+  <text class="small" x="105" y="282">离线指标好 ≠ 业务收益好；阈值、成本、动作策略决定最终价值</text>
+
+</svg>

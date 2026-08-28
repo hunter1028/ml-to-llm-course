@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="480" viewBox="0 0 980 480">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff}.card{fill:#fff;stroke:#d8dee9;stroke-width:1.4}.soft{fill:#f8fafc;stroke:#cbd5e1;stroke-width:1.2}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:17px}
+      .small{font-size:13px;fill:#4a5568}.title{font-size:24px;font-weight:700;fill:#111827}.mini{font-size:12px;fill:#64748b}
+      .blue{fill:#3b82f6}.green{fill:#10b981}.orange{fill:#f59e0b}.red{fill:#ef4444}.purple{fill:#8b5cf6}
+      .line{stroke:#475569;stroke-width:2;fill:none}.arrow{marker-end:url(#arrow)}.dash{stroke-dasharray:6 6}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  </defs>
+  <rect class="bg" width="980" height="480"/>
+  <text class="title" x="34" y="42">用“识别数字 8”串起深度学习：像素 → 探测器 → 部件 → 类别</text>
+
+  <g transform="translate(35 86)">
+    <rect class="card" x="0" y="0" width="170" height="285" rx="16"/>
+    <text class="txt" x="24" y="36">原始输入</text>
+    <text class="small" x="24" y="62">28×28 灰度像素</text>
+    <g transform="translate(35 85)">
+      <rect x="0" y="0" width="100" height="130" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+      <path d="M50 15 C25 15,20 45,45 60 C75 78,75 112,48 116 C20 120,18 82,48 68 C78 54,75 18,50 15Z" fill="none" stroke="#111827" stroke-width="11" stroke-linecap="round"/>
+      <g stroke="#e2e8f0" stroke-width="1"><path d="M20 0V130M40 0V130M60 0V130M80 0V130M0 26H100M0 52H100M0 78H100M0 104H100"/></g>
+    </g>
+    <text class="mini" x="23" y="250">像素本身只是数字矩阵</text>
+  </g>
+
+  <path class="line arrow" d="M215 225 L278 225"/>
+
+  <g transform="translate(285 86)">
+    <rect class="card" x="0" y="0" width="190" height="285" rx="16"/>
+    <text class="txt" x="23" y="36">简单探测器</text>
+    <text class="small" x="23" y="62">边缘 / 方向 / 暗区</text>
+    <rect class="soft" x="28" y="88" width="135" height="36" rx="10"/><text class="small" x="48" y="111">竖线响应强</text>
+    <rect class="soft" x="28" y="138" width="135" height="36" rx="10"/><text class="small" x="48" y="161">横线响应强</text>
+    <rect class="soft" x="28" y="188" width="135" height="36" rx="10"/><text class="small" x="48" y="211">弯曲响应强</text>
+    <text class="mini" x="25" y="250">ReLU 等激活像开关</text>
+  </g>
+
+  <path class="line arrow" d="M485 225 L548 225"/>
+
+  <g transform="translate(555 86)">
+    <rect class="card" x="0" y="0" width="190" height="285" rx="16"/>
+    <text class="txt" x="23" y="36">组合部件</text>
+    <text class="small" x="23" y="62">由多个探测器组合</text>
+    <rect class="soft" x="28" y="88" width="135" height="36" rx="10"/><text class="small" x="48" y="111">上半圆环</text>
+    <rect class="soft" x="28" y="138" width="135" height="36" rx="10"/><text class="small" x="48" y="161">下半圆环</text>
+    <rect class="soft" x="28" y="188" width="135" height="36" rx="10"/><text class="small" x="48" y="211">中间收腰</text>
+    <text class="mini" x="25" y="250">中间表示更接近任务</text>
+  </g>
+
+  <path class="line arrow" d="M755 225 L818 225"/>
+
+  <g transform="translate(825 86)">
+    <rect class="card" x="0" y="0" width="120" height="285" rx="16"/>
+    <text class="txt" x="25" y="36">输出</text>
+    <rect x="25" y="80" width="70" height="34" rx="9" fill="#fee2e2" stroke="#ef4444"/><text class="small" x="47" y="103">3</text>
+    <rect x="25" y="130" width="70" height="34" rx="9" fill="#dcfce7" stroke="#10b981"/><text class="small" x="47" y="153">8</text>
+    <rect x="25" y="180" width="70" height="34" rx="9" fill="#eef2ff" stroke="#8b5cf6"/><text class="small" x="42" y="203">9</text>
+    <text class="mini" x="20" y="250">logits → 概率</text>
+  </g>
+
+  <path class="line arrow dash" d="M885 388 C690 445,340 445,120 388"/>
+  <text class="small" x="345" y="438">预测错了：损失产生梯度，反向调整各层探测器的权重</text>
+</svg>

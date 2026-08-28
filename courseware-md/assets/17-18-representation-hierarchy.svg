@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="430" viewBox="0 0 920 430">
+
+  <defs>
+    <style>
+      .bg{fill:#fbfcff}.card{fill:#fff;stroke:#d8dee9;stroke-width:1.4}.soft{fill:#f8fafc;stroke:#cbd5e1;stroke-width:1.2}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:14px;fill:#4a5568}.title{font-size:24px;font-weight:700;fill:#111827}.mini{font-size:12px;fill:#64748b}
+      .blue{fill:#3b82f6}.red{fill:#ef4444}.green{fill:#10b981}.orange{fill:#f59e0b}.purple{fill:#8b5cf6}.gray{fill:#64748b}
+      .line{stroke:#475569;stroke-width:2;fill:none}.dash{stroke-dasharray:7 6}.arrow{marker-end:url(#arrow)}
+      .blueLine{stroke:#3b82f6;stroke-width:3;fill:none}.redLine{stroke:#ef4444;stroke-width:3;fill:none}.greenLine{stroke:#10b981;stroke-width:3;fill:none}.orangeLine{stroke:#f59e0b;stroke-width:3;fill:none}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  </defs>
+
+  <rect class="bg" width="920" height="430"/>
+  <text class="title" x="36" y="42">表示学习：从原始特征到可用判断</text>
+  <g transform="translate(45 85)">
+    <rect class="card" x="0" y="0" width="180" height="260" rx="16"/>
+    <text class="txt" x="28" y="38">原始输入</text>
+    <text class="small" x="24" y="82">面积</text><text class="small" x="24" y="116">房间数</text><text class="small" x="24" y="150">房龄</text><text class="small" x="24" y="184">浏览次数</text><text class="small" x="24" y="218">优惠券</text>
+  </g>
+  <path class="line arrow" d="M235 215 L315 215"/>
+  <g transform="translate(320 85)">
+    <rect class="card" x="0" y="0" width="210" height="260" rx="16"/>
+    <text class="txt" x="28" y="38">简单探测器</text>
+    <rect class="soft" x="25" y="65" width="160" height="38" rx="10"/><text class="small" x="48" y="90">面积是否够大</text>
+    <rect class="soft" x="25" y="118" width="160" height="38" rx="10"/><text class="small" x="48" y="143">房龄是否偏新</text>
+    <rect class="soft" x="25" y="171" width="160" height="38" rx="10"/><text class="small" x="48" y="196">近期是否活跃</text>
+  </g>
+  <path class="line arrow" d="M540 215 L620 215"/>
+  <g transform="translate(625 85)">
+    <rect class="card" x="0" y="0" width="245" height="260" rx="16"/>
+    <text class="txt" x="28" y="38">组合概念</text>
+    <rect class="soft" x="25" y="65" width="195" height="38" rx="10"/><text class="small" x="48" y="90">高价值房源</text>
+    <rect class="soft" x="25" y="118" width="195" height="38" rx="10"/><text class="small" x="48" y="143">高购买意愿用户</text>
+    <rect class="soft" x="25" y="171" width="195" height="38" rx="10"/><text class="small" x="48" y="196">成交概率</text>
+  </g>
+  <text class="small" x="70" y="385">深度学习的核心变化：不仅学习最终映射，也学习中间表示。</text>
+</svg>

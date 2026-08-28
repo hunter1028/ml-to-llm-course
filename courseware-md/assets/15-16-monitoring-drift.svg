@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">上线监控：数据漂移会让离线好模型逐渐失效</text>
+  <rect class="card" x="50" y="75" width="820" height="295"/>
+  <line class="axis" x1="105" y1="310" x2="800" y2="310"/><line class="axis" x1="105" y1="310" x2="105" y2="105"/>
+  <path class="line-blue" d="M130 250 C210 190,285 160,360 170 C430 182,500 220,560 255"/>
+  <path class="line-red" d="M300 265 C390 210,480 160,575 158 C660 160,720 205,775 250"/>
+  <text class="small" x="165" y="154">训练期分布</text><text class="small" x="610" y="150">上线期分布</text>
+  <line class="axis dash" x1="450" y1="105" x2="450" y2="310"/><text class="small" x="462" y="115">均值右移</text>
+  <text class="small" x="130" y="346">监控对象：特征分布、预测分数、业务转化、延迟、错误率</text>
+
+</svg>

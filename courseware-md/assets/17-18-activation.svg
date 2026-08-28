@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">常见激活函数：把线性分数变成非线性表达</text>
+  <rect class="card" x="45" y="75" width="830" height="295"/>
+  <line class="axis" x1="100" y1="250" x2="335" y2="250"/><line class="axis" x1="218" y1="310" x2="218" y2="115"/>
+  <path class="line-blue" d="M105 250 L218 250 L330 125"/><text class="small" x="155" y="335">ReLU: max(0,z)</text>
+  <line class="axis" x1="395" y1="250" x2="630" y2="250"/><line class="axis" x1="512" y1="310" x2="512" y2="115"/>
+  <path class="line-green" d="M400 245 C455 240,475 220,512 182 C550 145,585 126,625 122"/><text class="small" x="455" y="335">Sigmoid: 0~1</text>
+  <line class="axis" x1="680" y1="250" x2="865" y2="250"/><line class="axis" x1="772" y1="310" x2="772" y2="115"/>
+  <path class="line-orange" d="M685 285 C720 280,742 245,772 212 C805 175,835 142,860 138"/><text class="small" x="705" y="335">Tanh: -1~1</text>
+  <text class="small" x="80" y="105">隐藏层常用 ReLU</text><text class="small" x="380" y="105">二分类输出常用 Sigmoid</text><text class="small" x="680" y="105">序列模型中常见 Tanh</text>
+
+</svg>

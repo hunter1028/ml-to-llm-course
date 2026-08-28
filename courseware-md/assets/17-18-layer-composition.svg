@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="430" viewBox="0 0 920 430">
+
+  <defs>
+    <style>
+      .bg{fill:#fbfcff}.card{fill:#fff;stroke:#d8dee9;stroke-width:1.4}.soft{fill:#f8fafc;stroke:#cbd5e1;stroke-width:1.2}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:14px;fill:#4a5568}.title{font-size:24px;font-weight:700;fill:#111827}.mini{font-size:12px;fill:#64748b}
+      .blue{fill:#3b82f6}.red{fill:#ef4444}.green{fill:#10b981}.orange{fill:#f59e0b}.purple{fill:#8b5cf6}.gray{fill:#64748b}
+      .line{stroke:#475569;stroke-width:2;fill:none}.dash{stroke-dasharray:7 6}.arrow{marker-end:url(#arrow)}
+      .blueLine{stroke:#3b82f6;stroke-width:3;fill:none}.redLine{stroke:#ef4444;stroke-width:3;fill:none}.greenLine{stroke:#10b981;stroke-width:3;fill:none}.orangeLine{stroke:#f59e0b;stroke-width:3;fill:none}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker>
+  </defs>
+
+  <rect class="bg" width="920" height="430"/>
+  <text class="title" x="36" y="42">为什么必须有非线性激活</text>
+  <rect class="card" x="50" y="82" width="390" height="280" rx="16"/>
+  <text class="txt" x="82" y="122">没有激活：会合并</text>
+  <rect class="soft" x="100" y="160" width="88" height="55" rx="12"/><text class="small" x="122" y="192">W₁x+b₁</text>
+  <path class="line arrow" d="M195 188 L248 188"/>
+  <rect class="soft" x="255" y="160" width="95" height="55" rx="12"/><text class="small" x="278" y="192">W₂h+b₂</text>
+  <text class="small" x="86" y="260">W₂(W₁x+b₁)+b₂</text>
+  <text class="small" x="86" y="292">= (W₂W₁)x + (W₂b₁+b₂)</text>
+  <text class="small" x="86" y="326">本质仍是一层线性模型</text>
+  <rect class="card" x="480" y="82" width="390" height="280" rx="16"/>
+  <text class="txt" x="512" y="122">加入激活：中间截断/弯折</text>
+  <rect class="soft" x="525" y="160" width="88" height="55" rx="12"/><text class="small" x="548" y="192">W₁x+b₁</text>
+  <path class="line arrow" d="M620 188 L660 188"/>
+  <rect x="665" y="160" width="68" height="55" rx="12" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="682" y="192">ReLU</text>
+  <path class="line arrow" d="M740 188 L785 188"/>
+  <rect class="soft" x="790" y="160" width="45" height="55" rx="12"/><text class="small" x="804" y="192">W₂</text>
+  <path class="greenLine" d="M535 305 L610 305 L610 250 L800 250"/>
+  <text class="small" x="512" y="326">每层都可改变信息形状，组合出复杂边界</text>
+</svg>

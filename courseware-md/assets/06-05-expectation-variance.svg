@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="410" viewBox="0 0 1100 410">
+  <style>
+    .bg{fill:#fbfcff}.title{font:700 24px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#162033}.sub{font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#4b5870}.label{font:700 17px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#263348}.small{font:500 14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#5b667a}.axis{stroke:#9aa7bc;stroke-width:1.3}.dot{fill:#2f6fed}.dot2{fill:#ea4335}.mean{stroke:#111827;stroke-width:3}.brace{stroke:#34a853;stroke-width:2;fill:none}.box{fill:#fff;stroke:#d7dfef;stroke-width:1.5;rx:16}.formula{font:600 18px 'SFMono-Regular','Menlo','Consolas',monospace;fill:#263348}
+  </style>
+  <rect class="bg" width="1100" height="410"/>
+  <text class="title" x="40" y="44">期望、方差、标准差：中心 + 波动</text>
+  <text class="sub" x="40" y="72">同样平均值，不代表同样稳定。期望看中心，方差/标准差看离中心有多散。</text>
+
+  <rect class="box" x="45" y="105" width="470" height="235"/>
+  <text class="label" x="75" y="140">A：稳定产品</text>
+  <line class="axis" x1="90" y1="230" x2="470" y2="230"/>
+  <line class="mean" x1="280" y1="160" x2="280" y2="260"/>
+  <text class="small" x="260" y="285">均值 μ=100</text>
+  <circle class="dot" cx="240" cy="230" r="7"/><circle class="dot" cx="260" cy="230" r="7"/><circle class="dot" cx="280" cy="230" r="7"/><circle class="dot" cx="300" cy="230" r="7"/><circle class="dot" cx="320" cy="230" r="7"/>
+  <path class="brace" d="M240 190 C255 180,305 180,320 190"/>
+  <text class="small" x="244" y="180">点离均值近：标准差小</text>
+
+  <rect class="box" x="585" y="105" width="470" height="235"/>
+  <text class="label" x="615" y="140">B：波动产品</text>
+  <line class="axis" x1="630" y1="230" x2="1010" y2="230"/>
+  <line class="mean" x1="820" y1="160" x2="820" y2="260"/>
+  <text class="small" x="800" y="285">均值 μ=100</text>
+  <circle class="dot2" cx="670" cy="230" r="7"/><circle class="dot2" cx="760" cy="230" r="7"/><circle class="dot2" cx="820" cy="230" r="7"/><circle class="dot2" cx="910" cy="230" r="7"/><circle class="dot2" cx="980" cy="230" r="7"/>
+  <path class="brace" d="M670 190 C735 160,915 160,980 190"/>
+  <text class="small" x="725" y="160">点离均值远：标准差大</text>
+
+  <text class="formula" x="80" y="382">E[X]=长期平均值　　 Var(X)=E[(X-μ)²]　　 SD=σ=√Var(X)</text>
+</svg>

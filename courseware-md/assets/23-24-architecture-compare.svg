@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">三种架构的信息流差异</text>
+  <rect class="card" x="45" y="75" width="830" height="295"/>
+  <text class="small" x="95" y="115">CNN：局部窗口</text>
+  <rect x="95" y="145" width="45" height="45" fill="#dbeafe" stroke="#3b82f6"/><rect x="150" y="145" width="45" height="45" fill="#dbeafe" stroke="#3b82f6"/><rect x="205" y="145" width="45" height="45" fill="#fff" stroke="#cbd5e1"/><rect x="260" y="145" width="45" height="45" fill="#fff" stroke="#cbd5e1"/>
+  <text class="small" x="360" y="115">RNN：链式传递</text>
+  <circle class="green" cx="375" cy="168" r="20"/><circle class="green" cx="445" cy="168" r="20"/><circle class="green" cx="515" cy="168" r="20"/><path class="axis arrow" d="M395 168 L425 168"/><path class="axis arrow" d="M465 168 L495 168"/>
+  <text class="small" x="635" y="115">Attention：全连接交互</text>
+  <circle class="orange" cx="650" cy="150" r="11"/><circle class="orange" cx="720" cy="150" r="11"/><circle class="orange" cx="685" cy="215" r="11"/><circle class="orange" cx="765" cy="215" r="11"/>
+  <line class="axis" x1="650" y1="150" x2="720" y2="150"/><line class="axis" x1="650" y1="150" x2="685" y2="215"/><line class="axis" x1="650" y1="150" x2="765" y2="215"/><line class="axis" x1="720" y1="150" x2="685" y2="215"/><line class="axis" x1="720" y1="150" x2="765" y2="215"/><line class="axis" x1="685" y1="215" x2="765" y2="215"/>
+  <text class="small" x="95" y="300">比较维度：局部性、顺序性、并行性、长距离依赖</text>
+
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300">
+  <style>.bg{fill:#fbfcff}.title{font:700 22px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#172033}.txt{font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#4b5870}.axis{stroke:#8b98ad;stroke-width:1.4}.bar0{fill:#dbe8ff;stroke:#2f6fed;stroke-width:2}.bar1{fill:#ffe7b3;stroke:#f5a623;stroke-width:2}.lab{font:600 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#263348}.formula{font:600 17px Menlo,Consolas,monospace;fill:#263348}</style>
+  <rect class="bg" width="920" height="300"/>
+  <text class="title" x="36" y="42">伯努利分布：一次 0/1 事件</text>
+  <text class="txt" x="36" y="70">一次试验只有两种结果：成功/失败、点击/不点击、违约/不违约。</text>
+  <line class="axis" x1="100" y1="230" x2="520" y2="230"/>
+  <line class="axis" x1="100" y1="230" x2="100" y2="95"/>
+  <rect class="bar0" x="190" y="170" width="70" height="60"/>
+  <rect class="bar1" x="350" y="120" width="70" height="110"/>
+  <text class="lab" x="220" y="255">0</text><text class="lab" x="380" y="255">1</text>
+  <text class="lab" x="172" y="160">1-p</text><text class="lab" x="373" y="110">p</text>
+  <text class="formula" x="590" y="130">Y ~ Bern(p)</text>
+  <text class="txt" x="590" y="168">P(Y=1)=p</text>
+  <text class="txt" x="590" y="198">P(Y=0)=1-p</text>
+</svg>

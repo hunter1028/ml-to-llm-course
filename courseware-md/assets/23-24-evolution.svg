@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">技术迭代：从局部感受野、时间记忆到全局注意力</text>
+  <rect class="card" x="45" y="75" width="830" height="295"/>
+  <rect x="80" y="145" width="145" height="75" rx="14" fill="#eff6ff" stroke="#3b82f6"/><text class="txt" x="130" y="178">CNN</text><text class="small" x="100" y="202">局部特征</text>
+  <path class="axis arrow" d="M230 182 L340 182"/>
+  <rect x="340" y="145" width="145" height="75" rx="14" fill="#ecfdf5" stroke="#10b981"/><text class="txt" x="390" y="178">RNN</text><text class="small" x="365" y="202">序列记忆</text>
+  <path class="axis arrow" d="M490 182 L600 182"/>
+  <rect x="600" y="145" width="170" height="75" rx="14" fill="#fff7ed" stroke="#f59e0b"/><text class="txt" x="632" y="178">Transformer</text><text class="small" x="635" y="202">全局依赖</text>
+  <text class="small" x="100" y="285">CNN 强在并行和局部模式；RNN 强在时序状态；Transformer 强在任意位置直接交互</text>
+
+</svg>

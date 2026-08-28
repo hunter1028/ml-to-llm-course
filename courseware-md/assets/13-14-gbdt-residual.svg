@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">GBDT 回归：预测值逐轮靠近真实值</text>
+  <rect class="card" x="50" y="75" width="820" height="295"/>
+  <line class="axis" x1="105" y1="310" x2="800" y2="310"/><line class="axis" x1="105" y1="310" x2="105" y2="105"/>
+  <text class="small" x="805" y="315">迭代轮数</text><text class="small" x="62" y="112">误差</text>
+  <path class="line-red" d="M130 130 C230 160,310 210,400 245 C500 278,620 292,770 300"/>
+  <circle class="red" cx="130" cy="130" r="6"/><circle class="red" cx="280" cy="198" r="6"/><circle class="red" cx="430" cy="255" r="6"/><circle class="red" cx="600" cy="288" r="6"/><circle class="red" cx="770" cy="300" r="6"/>
+  <text class="small" x="150" y="128">第0轮：误差大</text><text class="small" x="395" y="235">每轮拟合残差</text><text class="small" x="610" y="280">误差下降</text>
+  <rect x="155" y="330" width="610" height="1" fill="#ffffff"/>
+  <text class="small" x="115" y="350">直觉：不是一棵大树硬拟合，而是很多小树逐步纠错</text>
+
+</svg>

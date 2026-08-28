@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="520" viewBox="0 0 920 520">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff}.card{fill:#fff;stroke:#d8dee9;stroke-width:1.4}.title{font:700 24px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#111827}.label{font:600 17px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033}.txt{font:16px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033}.small{font:14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#4a5568}.edge{stroke:#94a3b8;stroke-width:2;fill:none;marker-end:url(#arrow)}.main-edge{stroke:#8b5cf6;stroke-width:3;fill:none;marker-end:url(#arrow-purple)}.loss-edge{stroke:#ef4444;stroke-width:3;fill:none;marker-end:url(#arrow-red)}
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#94a3b8"/></marker>
+    <marker id="arrow-purple" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/></marker>
+    <marker id="arrow-red" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#ef4444"/></marker>
+  </defs>
+  <rect class="bg" width="920" height="520"/>
+  <text class="title" x="36" y="42">神经网络：计算节点 + 带权重的数据通路</text>
+  <rect class="card" x="42" y="70" width="836" height="375" rx="14"/>
+
+  <text class="label" x="132" y="105" text-anchor="middle">输入层</text>
+  <text class="small" x="132" y="127" text-anchor="middle">原始数字</text>
+  <text class="label" x="410" y="105" text-anchor="middle">隐藏层</text>
+  <text class="small" x="410" y="127" text-anchor="middle">加权组合 + 激活</text>
+  <text class="label" x="654" y="105" text-anchor="middle">输出层</text>
+  <text class="small" x="654" y="127" text-anchor="middle">任务结果</text>
+  <text class="label" x="807" y="105" text-anchor="middle">Loss</text>
+  <text class="small" x="807" y="127" text-anchor="middle">模型外的训练目标</text>
+
+  <path class="edge" d="M178 174 C255 174 302 187 360 218"/>
+  <path class="edge" d="M178 254 C254 254 302 235 360 225"/>
+  <path class="edge" d="M178 334 C255 334 303 266 363 235"/>
+  <path class="edge" d="M178 174 C255 174 302 286 363 303"/>
+  <path class="edge" d="M178 254 C254 254 302 293 360 307"/>
+  <path class="edge" d="M178 334 C255 334 302 322 360 314"/>
+  <path class="main-edge" d="M460 222 C520 222 557 247 608 254"/>
+  <path class="main-edge" d="M460 309 C520 309 557 273 608 264"/>
+  <path class="loss-edge" d="M700 259 L754 259"/>
+
+  <circle cx="132" cy="174" r="43" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/><text class="label" x="132" y="169" text-anchor="middle">x₁</text><text class="small" x="132" y="190" text-anchor="middle">输入数</text>
+  <circle cx="132" cy="254" r="43" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/><text class="label" x="132" y="249" text-anchor="middle">x₂</text><text class="small" x="132" y="270" text-anchor="middle">输入数</text>
+  <circle cx="132" cy="334" r="43" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/><text class="label" x="132" y="329" text-anchor="middle">x₃</text><text class="small" x="132" y="350" text-anchor="middle">输入数</text>
+
+  <circle cx="410" cy="222" r="50" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/><text class="label" x="410" y="217" text-anchor="middle">h₁</text><text class="small" x="410" y="239" text-anchor="middle">输出一个数</text>
+  <circle cx="410" cy="309" r="50" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/><text class="label" x="410" y="304" text-anchor="middle">h₂</text><text class="small" x="410" y="326" text-anchor="middle">输出一个数</text>
+
+  <circle cx="654" cy="259" r="46" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/><text class="label" x="654" y="254" text-anchor="middle">ŷ</text><text class="small" x="654" y="276" text-anchor="middle">预测</text>
+  <rect x="754" y="220" width="105" height="78" rx="13" fill="#fef2f2" stroke="#ef4444" stroke-width="2"/><text class="label" x="807" y="254" text-anchor="middle">L(y, ŷ)</text><text class="small" x="807" y="277" text-anchor="middle">只在训练时</text>
+
+  <rect x="215" y="362" width="350" height="58" rx="10" fill="#f5f3ff" stroke="#c4b5fd"/>
+  <text class="txt" x="235" y="386">一条箭头：前一节点的数字 × 这条线的权重</text>
+  <text class="small" x="235" y="407">后一节点把所有传入结果相加，再继续计算</text>
+
+  <circle cx="82" cy="480" r="9" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/><text class="small" x="101" y="485">圆圈 = 一个计算位置</text>
+  <line x1="326" y1="480" x2="374" y2="480" class="main-edge"/><text class="small" x="391" y="485">箭头 = 数字的传递路径</text>
+  <text class="label" x="655" y="485">整张点线图 = 网络</text>
+</svg>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">Boosting：后一棵树专门修正前面没学好的部分</text>
+  <rect class="card" x="45" y="75" width="830" height="295"/>
+  <rect x="80" y="150" width="120" height="60" rx="10" fill="#eff6ff" stroke="#3b82f6"/><text class="small" x="105" y="185">初始预测</text>
+  <path class="axis arrow" d="M205 180 L290 180"/><text class="small" x="225" y="160">残差/梯度</text>
+  <rect x="290" y="125" width="110" height="110" rx="12" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="320" y="158">树1</text><text class="small" x="305" y="190">修正一部分</text>
+  <path class="axis arrow" d="M405 180 L490 180"/>
+  <rect x="490" y="125" width="110" height="110" rx="12" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="520" y="158">树2</text><text class="small" x="505" y="190">继续修正</text>
+  <path class="axis arrow" d="M605 180 L690 180"/>
+  <rect x="690" y="125" width="110" height="110" rx="12" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="720" y="158">树T</text><text class="small" x="705" y="190">最终叠加</text>
+  <text class="small" x="100" y="300">最终模型：F_T(x)=F_0(x)+η·tree_1(x)+η·tree_2(x)+...+η·tree_T(x)</text>
+
+</svg>

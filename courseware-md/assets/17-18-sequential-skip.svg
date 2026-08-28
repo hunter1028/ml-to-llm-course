@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="450" viewBox="0 0 920 450">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff}.card{fill:#fff;stroke:#d8dee9;stroke-width:1.4}.title{font:700 24px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#111827}.label{font:600 17px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033}.small{font:14px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#4a5568}.edge{stroke:#3b82f6;stroke-width:3;fill:none;marker-end:url(#arrow-blue)}.skip{stroke:#8b5cf6;stroke-width:3;fill:none;stroke-dasharray:8 6;marker-end:url(#arrow-purple)}.back{stroke:#ef4444;stroke-width:2.5;fill:none;stroke-dasharray:7 6;marker-end:url(#arrow-red)}
+    </style>
+    <marker id="arrow-blue" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#3b82f6"/></marker>
+    <marker id="arrow-purple" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#8b5cf6"/></marker>
+    <marker id="arrow-red" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#ef4444"/></marker>
+  </defs>
+  <rect class="bg" width="920" height="450"/>
+  <text class="title" x="36" y="42">顺序连接与跳跃连接：后层能否直接使用早期输入</text>
+
+  <rect class="card" x="45" y="72" width="830" height="135" rx="14"/>
+  <text class="label" x="76" y="105">普通顺序连接</text>
+  <rect x="100" y="129" width="110" height="50" rx="11" fill="#eff6ff" stroke="#3b82f6"/><text class="label" x="155" y="160" text-anchor="middle">输入 x</text>
+  <path class="edge" d="M215 154 L320 154"/>
+  <rect x="320" y="129" width="120" height="50" rx="11" fill="#ecfdf5" stroke="#10b981"/><text class="label" x="380" y="160" text-anchor="middle">第一层 h₁</text>
+  <path class="edge" d="M445 154 L550 154"/>
+  <rect x="550" y="129" width="120" height="50" rx="11" fill="#ecfdf5" stroke="#10b981"/><text class="label" x="610" y="160" text-anchor="middle">第二层 h₂</text>
+  <path class="edge" d="M675 154 L750 154"/>
+  <text class="small" x="750" y="159">第二层只收到 h₁</text>
+
+  <rect class="card" x="45" y="230" width="830" height="170" rx="14"/>
+  <text class="label" x="76" y="263">跳跃连接 / 残差连接</text>
+  <rect x="100" y="313" width="110" height="50" rx="11" fill="#eff6ff" stroke="#3b82f6"/><text class="label" x="155" y="344" text-anchor="middle">输入 x</text>
+  <path class="edge" d="M215 338 L320 338"/>
+  <rect x="320" y="313" width="120" height="50" rx="11" fill="#ecfdf5" stroke="#10b981"/><text class="label" x="380" y="344" text-anchor="middle">第一层 h₁</text>
+  <path class="edge" d="M445 338 L550 338"/>
+  <rect x="550" y="313" width="120" height="50" rx="11" fill="#ecfdf5" stroke="#10b981"/><text class="label" x="610" y="344" text-anchor="middle">第二层 h₂</text>
+  <path class="skip" d="M155 308 C170 260 520 260 598 307"/>
+  <text class="small" x="331" y="278" fill="#7c3aed">x 绕过第一层，直接送到后面相加或拼接</text>
+  <path class="back" d="M590 369 C500 414 245 414 170 369"/>
+  <text class="small" x="310" y="393" fill="#dc2626">反向时梯度也能沿短路径返回</text>
+</svg>

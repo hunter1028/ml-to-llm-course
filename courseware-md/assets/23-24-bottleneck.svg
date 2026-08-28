@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">CNN/RNN 的瓶颈推动 Transformer 出现</text>
+  <rect class="card" x="45" y="75" width="830" height="295"/>
+  <rect x="85" y="120" width="205" height="145" rx="14" fill="#eff6ff" stroke="#3b82f6"/>
+  <text class="txt" x="160" y="153">CNN</text><text class="small" x="115" y="190">长距离依赖弱</text><text class="small" x="115" y="220">全局关系需堆很多层</text>
+  <rect x="355" y="120" width="205" height="145" rx="14" fill="#ecfdf5" stroke="#10b981"/>
+  <text class="txt" x="430" y="153">RNN</text><text class="small" x="385" y="190">串行计算慢</text><text class="small" x="385" y="220">长序列信息衰减</text>
+  <path class="axis arrow" d="M570 193 L650 193"/>
+  <rect x="650" y="120" width="180" height="145" rx="14" fill="#fff7ed" stroke="#f59e0b"/>
+  <text class="txt" x="690" y="153">Attention</text><text class="small" x="680" y="190">任意位置直接连接</text><text class="small" x="680" y="220">并行计算更友好</text>
+  <text class="small" x="105" y="335">结论：Transformer 不是凭空出现，而是对 CNN/RNN 短板的系统回应</text>
+
+</svg>

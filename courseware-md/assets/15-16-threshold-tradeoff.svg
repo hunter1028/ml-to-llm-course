@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">阈值变化：召回率、精准率、成本会一起变化</text>
+  <rect class="card" x="50" y="75" width="820" height="295"/>
+  <line class="axis" x1="110" y1="305" x2="790" y2="305"/><line class="axis" x1="110" y1="305" x2="110" y2="110"/>
+  <text class="small" x="760" y="330">阈值</text><text class="small" x="60" y="110">指标</text>
+  <path class="line-blue" d="M130 145 C255 165,365 205,505 250 C610 280,700 295,770 300"/>
+  <path class="line-green" d="M130 290 C250 275,365 242,505 205 C610 168,700 135,770 120"/>
+  <path class="line-red dash" d="M135 285 C250 260,365 210,505 160 C615 138,710 148,770 180"/>
+  <text class="small" x="650" y="128">精准率 ↑</text><text class="small" x="645" y="300">召回率 ↓</text><text class="small" x="475" y="152">收益峰值</text>
+  <line class="axis dash" x1="505" y1="305" x2="505" y2="122"/><text class="small" x="520" y="320">候选阈值</text>
+  <text class="small" x="130" y="352">阈值不是固定 0.5，应按业务收益、误伤成本、触达预算选择</text>
+
+</svg>

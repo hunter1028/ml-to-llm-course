@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">XGBoost 与 LightGBM：同是 Boosting，工程侧重点不同</text>
+  <rect class="card" x="45" y="75" width="390" height="285"/><rect class="card" x="485" y="75" width="390" height="285"/>
+  <text class="txt" x="155" y="112">XGBoost</text><text class="txt" x="590" y="112">LightGBM</text>
+  <rect x="150" y="140" width="90" height="42" rx="8" fill="#eff6ff" stroke="#3b82f6"/><text class="small" x="172" y="167">根</text>
+  <line class="axis" x1="170" y1="182" x2="115" y2="235"/><line class="axis" x1="220" y1="182" x2="275" y2="235"/>
+  <rect x="75" y="235" width="90" height="42" rx="8" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="103" y="262">叶</text>
+  <rect x="225" y="235" width="90" height="42" rx="8" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="253" y="262">叶</text>
+  <text class="small" x="95" y="315">按层生长，更稳，控制复杂度直观</text>
+  <rect x="590" y="135" width="90" height="42" rx="8" fill="#eff6ff" stroke="#3b82f6"/><text class="small" x="612" y="162">根</text>
+  <line class="axis" x1="610" y1="177" x2="555" y2="230"/><line class="axis" x1="660" y1="177" x2="715" y2="230"/>
+  <rect x="515" y="230" width="90" height="42" rx="8" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="543" y="257">叶</text>
+  <rect x="675" y="230" width="90" height="42" rx="8" fill="#fff7ed" stroke="#f59e0b"/><text class="small" x="693" y="257">继续分裂</text>
+  <line class="axis" x1="720" y1="272" x2="680" y2="318"/><line class="axis" x1="720" y1="272" x2="760" y2="318"/>
+  <text class="small" x="525" y="345">按收益最大的叶子生长，更快但需控深度</text>
+
+</svg>

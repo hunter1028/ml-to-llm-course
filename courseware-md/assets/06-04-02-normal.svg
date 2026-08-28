@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300">
+  <style>.bg{fill:#fbfcff}.title{font:700 22px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#172033}.txt{font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#4b5870}.axis{stroke:#8b98ad;stroke-width:1.4}.curve{fill:none;stroke:#2f6fed;stroke-width:3}.dash{stroke:#ea4335;stroke-width:1.4;stroke-dasharray:5 5}.band{fill:#dbe8ff;opacity:.8}.lab{font:600 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#263348}.formula{font:600 17px Menlo,Consolas,monospace;fill:#263348}</style>
+  <rect class="bg" width="920" height="300"/>
+  <text class="title" x="36" y="42">正态分布：围绕均值波动</text>
+  <text class="txt" x="36" y="70">中心是 μ，宽窄由 σ 控制；误差、噪声、测量值经常近似这种形状。</text>
+  <line class="axis" x1="90" y1="230" x2="590" y2="230"/>
+  <line class="axis" x1="90" y1="230" x2="90" y2="95"/>
+  <path class="band" d="M235 230 C260 214,283 155,340 115 C397 155,420 214,445 230 Z"/>
+  <path class="curve" d="M115 229 C165 226,190 205,220 170 C260 120,295 100,340 100 C385 100,420 120,460 170 C490 205,515 226,565 229"/>
+  <line class="dash" x1="340" y1="95" x2="340" y2="245"/>
+  <line class="dash" x1="235" y1="150" x2="235" y2="240"/>
+  <line class="dash" x1="445" y1="150" x2="445" y2="240"/>
+  <text class="lab" x="333" y="267">μ</text><text class="lab" x="210" y="267">μ-σ</text><text class="lab" x="424" y="267">μ+σ</text>
+  <text class="formula" x="635" y="132">X ~ N(μ, σ²)</text>
+  <text class="txt" x="635" y="168">μ：中心位置</text>
+  <text class="txt" x="635" y="198">σ：分散程度</text>
+</svg>

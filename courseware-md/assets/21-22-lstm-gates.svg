@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">LSTM：用门控控制记忆的保留、写入和输出</text>
+  <rect class="card" x="45" y="75" width="830" height="295"/>
+  <line class="line-orange arrow" x1="105" y1="150" x2="815" y2="150"/><text class="small" x="112" y="132">细胞状态 C：长期记忆通道</text>
+  <rect x="155" y="205" width="130" height="60" rx="12" fill="#fef2f2" stroke="#ef4444"/><text class="small" x="185" y="230">遗忘门</text><text class="small" x="178" y="250">forget</text>
+  <rect x="380" y="205" width="130" height="60" rx="12" fill="#eff6ff" stroke="#3b82f6"/><text class="small" x="410" y="230">输入门</text><text class="small" x="418" y="250">input</text>
+  <rect x="605" y="205" width="130" height="60" rx="12" fill="#ecfdf5" stroke="#10b981"/><text class="small" x="635" y="230">输出门</text><text class="small" x="638" y="250">output</text>
+  <path class="axis arrow" d="M220 205 L220 157"/><path class="axis arrow" d="M445 205 L445 157"/><path class="axis arrow" d="M670 205 L670 157"/>
+  <text class="small" x="135" y="318">遗忘门：删旧信息</text><text class="small" x="350" y="318">输入门：写新信息</text><text class="small" x="580" y="318">输出门：决定当前输出</text>
+  <text class="small" x="110" y="105">LSTM = Long Short-Term Memory</text>
+
+</svg>

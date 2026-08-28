@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="430" viewBox="0 0 1100 430">
+  <style>
+    .bg{fill:#fbfcff}.panel{fill:#fff;stroke:#d7dfef;stroke-width:1.5;rx:16}.title{font:700 24px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#162033}.sub{font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#4b5870}.label{font:600 16px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#263348}.small{font:500 13px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Noto Sans CJK SC',Arial,sans-serif;fill:#5b667a}.axis{stroke:#9aa7bc;stroke-width:1.2}.curve{fill:none;stroke:#2f6fed;stroke-width:3}.bar{fill:#2f6fed}.bar2{fill:#34a853}.bar3{fill:#fbbc04}.bar4{fill:#ea4335}.area{fill:#dbe8ff;stroke:#2f6fed;stroke-width:2}.dash{stroke:#7b8798;stroke-width:1.2;stroke-dasharray:4 4}
+  </style>
+  <rect class="bg" width="1100" height="430"/>
+  <text class="title" x="40" y="42">常见分布：不同任务，对应不同“数据生成方式”</text>
+  <text class="sub" x="40" y="70">分布不是背名称，而是判断：这个 y 像连续数值、0/1 事件，还是多类别结果？</text>
+
+  <rect class="panel" x="40" y="100" width="240" height="270"/>
+  <text class="label" x="65" y="132">均匀分布 Uniform</text>
+  <line class="axis" x1="70" y1="300" x2="250" y2="300"/>
+  <line class="axis" x1="70" y1="300" x2="70" y2="175"/>
+  <rect class="area" x="95" y="205" width="130" height="95"/>
+  <line class="dash" x1="95" y1="205" x2="95" y2="315"/>
+  <line class="dash" x1="225" y1="205" x2="225" y2="315"/>
+  <text class="small" x="89" y="333">a</text><text class="small" x="220" y="333">b</text>
+  <text class="small" x="65" y="355">区间内机会相近：随机初始化、抽样</text>
+
+  <rect class="panel" x="310" y="100" width="240" height="270"/>
+  <text class="label" x="335" y="132">正态分布 Normal</text>
+  <line class="axis" x1="340" y1="300" x2="520" y2="300"/>
+  <line class="axis" x1="340" y1="300" x2="340" y2="175"/>
+  <path class="curve" d="M350 298 C380 292,390 245,430 205 C470 245,480 292,510 298"/>
+  <line class="dash" x1="430" y1="200" x2="430" y2="310"/>
+  <text class="small" x="423" y="330">μ</text>
+  <text class="small" x="335" y="355">围绕均值波动：误差、噪声、异常值</text>
+
+  <rect class="panel" x="580" y="100" width="240" height="270"/>
+  <text class="label" x="605" y="132">伯努利 Bernoulli</text>
+  <line class="axis" x1="610" y1="300" x2="790" y2="300"/>
+  <line class="axis" x1="610" y1="300" x2="610" y2="175"/>
+  <rect class="bar" x="650" y="235" width="38" height="65"/>
+  <rect class="bar3" x="720" y="190" width="38" height="110"/>
+  <text class="small" x="663" y="322">0</text><text class="small" x="733" y="322">1</text>
+  <text class="small" x="610" y="355">只有失败/成功：点击、违约、转化</text>
+
+  <rect class="panel" x="850" y="100" width="210" height="270"/>
+  <text class="label" x="875" y="132">类别/多项 Categorical</text>
+  <line class="axis" x1="880" y1="300" x2="1030" y2="300"/>
+  <line class="axis" x1="880" y1="300" x2="880" y2="175"/>
+  <rect class="bar" x="905" y="215" width="30" height="85"/>
+  <rect class="bar2" x="950" y="245" width="30" height="55"/>
+  <rect class="bar4" x="995" y="200" width="30" height="100"/>
+  <text class="small" x="900" y="322">猫</text><text class="small" x="945" y="322">狗</text><text class="small" x="990" y="322">鸟</text>
+  <text class="small" x="875" y="355">多类别概率：softmax 输出</text>
+</svg>

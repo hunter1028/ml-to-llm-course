@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+  <defs>
+    <style>
+      .bg{fill:#fbfcff} .card{fill:#ffffff;stroke:#d8dee9;stroke-width:1.4;rx:14}
+      .axis{stroke:#5b6472;stroke-width:1.5} .grid{stroke:#e7ebf2;stroke-width:1}
+      .txt{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif;fill:#172033;font-size:18px}
+      .small{font-size:15px;fill:#4a5568} .title{font-size:24px;font-weight:700;fill:#111827}
+      .blue{fill:#3b82f6} .red{fill:#ef4444} .green{fill:#10b981} .orange{fill:#f59e0b} .purple{fill:#8b5cf6}
+      .line-blue{stroke:#3b82f6;stroke-width:3;fill:none} .line-red{stroke:#ef4444;stroke-width:3;fill:none}
+      .line-green{stroke:#10b981;stroke-width:3;fill:none} .line-orange{stroke:#f59e0b;stroke-width:3;fill:none}
+      .dash{stroke-dasharray:8 7} .arrow{marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect class="bg" x="0" y="0" width="920" height="420"/>
+
+  <text class="title" x="36" y="42">PCA：找方差最大的方向，把高维压到低维</text>
+  <rect class="card" x="45" y="75" width="820" height="285"/>
+  <line class="axis" x1="120" y1="300" x2="430" y2="300"/><line class="axis" x1="120" y1="300" x2="120" y2="110"/>
+  <ellipse cx="265" cy="205" rx="132" ry="35" transform="rotate(-28 265 205)" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <circle class="blue" cx="178" cy="248" r="6"/><circle class="blue" cx="215" cy="225" r="6"/><circle class="blue" cx="252" cy="205" r="6"/><circle class="blue" cx="285" cy="185" r="6"/><circle class="blue" cx="318" cy="170" r="6"/><circle class="blue" cx="350" cy="150" r="6"/>
+  <line class="line-red arrow" x1="145" y1="270" x2="390" y2="135"/><text class="small" x="310" y="130">第一主成分</text>
+  <path class="line-orange dash arrow" d="M455 210 L545 210"/><text class="small" x="462" y="190">投影</text>
+  <line class="axis" x1="595" y1="245" x2="815" y2="245"/>
+  <circle class="green" cx="615" cy="245" r="6"/><circle class="green" cx="650" cy="245" r="6"/><circle class="green" cx="688" cy="245" r="6"/><circle class="green" cx="725" cy="245" r="6"/><circle class="green" cx="765" cy="245" r="6"/><circle class="green" cx="800" cy="245" r="6"/>
+  <text class="small" x="605" y="285">二维特征压成一维坐标，尽量保留原数据差异</text>
+  <text class="small" x="110" y="338">保留信息：沿主方向的方差</text>
+
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="300" viewBox="0 0 920 300">
+  <style>.bg{fill:#fbfcff}.title{font:700 22px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#172033}.txt{font:500 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#4b5870}.axis{stroke:#8b98ad;stroke-width:1.4}.rect{fill:#dbe8ff;stroke:#2f6fed;stroke-width:2}.dash{stroke:#7b8798;stroke-width:1.2;stroke-dasharray:4 4}.lab{font:600 15px -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC',Arial,sans-serif;fill:#263348}.formula{font:600 17px Menlo,Consolas,monospace;fill:#263348}</style>
+  <rect class="bg" width="920" height="300"/>
+  <text class="title" x="36" y="42">均匀分布：区间内机会相近</text>
+  <text class="txt" x="36" y="70">从 a 到 b 的每个小区间概率密度一样，常用于随机初始化、随机抽样。</text>
+  <line class="axis" x1="90" y1="230" x2="560" y2="230"/>
+  <line class="axis" x1="90" y1="230" x2="90" y2="105"/>
+  <rect class="rect" x="170" y="135" width="300" height="95"/>
+  <line class="dash" x1="170" y1="135" x2="170" y2="245"/>
+  <line class="dash" x1="470" y1="135" x2="470" y2="245"/>
+  <text class="lab" x="164" y="267">a</text><text class="lab" x="464" y="267">b</text>
+  <text class="lab" x="575" y="235">x</text><text class="lab" x="70" y="102">密度</text>
+  <text class="formula" x="620" y="135">X ~ U(a,b)</text>
+  <text class="txt" x="620" y="170">特点：没有中心偏好</text>
+  <text class="txt" x="620" y="200">例子：U(0,1) 随机数</text>
+</svg>

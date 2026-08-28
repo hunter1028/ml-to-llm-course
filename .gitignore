@@ -1,0 +1,34 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Local specification and generation state
+.specs-fire/
+
+# Generated slides and inspection artifacts
+courseware/
+
+# Placeholder/local code environment (course code can be published separately when ready)
+codes/
+
+# Exported documents; publish through Releases when needed
+/*.docx
+/*.pdf
+
+# Backups and temporary files
+*.bak
+*.tmp
+*.swp
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editors
+.vscode/
+.idea/
