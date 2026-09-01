@@ -1,0 +1,12 @@
+[project]
+name = "codes"
+version = "0.1.0"
+description = "机器学习到大模型课程示例代码"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.10.0",
+    "numpy>=2.0.0",
+    "pandas>=2.2.0",
+    "scikit-learn>=1.7.0",
+]

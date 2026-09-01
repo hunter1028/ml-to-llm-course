@@ -8,9 +8,6 @@
 # Generated slides and inspection artifacts
 courseware/
 
-# Placeholder/local code environment (course code can be published separately when ready)
-codes/
-
 # Exported documents; publish through Releases when needed
 /*.docx
 /*.pdf
@@ -19,6 +16,10 @@ codes/
 *.bak
 *.tmp
 *.swp
+
+# Generated code outputs
+outputs/
+**/outputs/
 
 # Python environments and caches
 .venv/
