@@ -386,6 +386,8 @@ GBDT 系列适合结构化表格数据：
 
 ### 10.1 sklearn GBDT baseline
 
+完整脚本见：[sklearn GBDT baseline](../codes/lesson_13_14_gbdt_xgboost_lightgbm/00_sklearn_gbdt_baseline.py)。
+
 ```python
 from sklearn.datasets import load_breast_cancer
 from sklearn.model_selection import train_test_split
@@ -418,6 +420,8 @@ print(classification_report(y_test, pred))
 
 如果本地已安装 XGBoost：
 
+完整脚本见：[XGBoost 训练模板](../codes/lesson_13_14_gbdt_xgboost_lightgbm/01_xgboost_template.py)。
+
 ```python
 from xgboost import XGBClassifier
 
@@ -441,6 +445,8 @@ print("XGBoost AUC:", round(roc_auc_score(y_test, proba), 4))
 ```
 
 如果本地已安装 LightGBM：
+
+完整脚本见：[LightGBM 训练模板](../codes/lesson_13_14_gbdt_xgboost_lightgbm/02_lightgbm_template.py)。
 
 ```python
 from lightgbm import LGBMClassifier

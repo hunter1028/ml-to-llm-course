@@ -356,6 +356,8 @@ python -m pip install torch transformers
 
 ### 10.2 Encoder 做文本分类
 
+完整脚本见：[Encoder 文本分类](../codes/lesson_27_28_encoder_decoder/00_encoder_text_classification.py)。
+
 ```python
 from transformers import pipeline
 
@@ -371,6 +373,8 @@ print(result)
 这里得到的是固定标签及分数。模型主干负责编码，分类头负责把聚合表示映射成类别 logits。
 
 ### 10.3 Decoder 做文本生成
+
+完整脚本见：[Decoder 文本生成](../codes/lesson_27_28_encoder_decoder/01_decoder_text_generation.py)。
 
 ```python
 from transformers import pipeline
@@ -398,6 +402,8 @@ print(result[0]["generated_text"])
 
 ### 10.4 Encoder-Decoder 做文本到文本生成
 
+完整脚本见：[Encoder-Decoder 文本到文本生成](../codes/lesson_27_28_encoder_decoder/02_encoder_decoder_translation.py)。
+
 ```python
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
@@ -414,6 +420,8 @@ print(tokenizer.decode(output_ids[0], skip_special_tokens=True))
 T5 把不同任务统一成“文本输入 → 文本输出”。这里使用经过指令训练的 FLAN-T5，小型示例中的任务说明告诉模型当前需要做什么。
 
 ### 10.5 观察模型类和输出形状
+
+完整脚本见：[观察模型类和输出形状](../codes/lesson_27_28_encoder_decoder/03_model_output_shapes.py)。
 
 ```python
 import torch

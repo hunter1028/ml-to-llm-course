@@ -12,3 +12,6 @@ wheels/
 # Generated outputs
 outputs/
 **/outputs/
+
+# Editor temporary files
+tempCodeRunnerFile.py

@@ -420,6 +420,8 @@ Transformer 不是在所有任务上都自动优于 CNN/RNN。小数据、低延
 
 ### 13.1 手写缩放点积注意力
 
+完整脚本见：[手写缩放点积注意力](../codes/lesson_25_26_transformer_attention/00_scaled_dot_product_attention.py)。
+
 ```python
 import math
 import torch
@@ -461,6 +463,8 @@ print(attn.shape)  # [2, 4, 6, 6]
 
 ### 13.2 实现正弦位置编码
 
+完整脚本见：[正弦位置编码](../codes/lesson_25_26_transformer_attention/01_sinusoidal_position_encoding.py)。
+
 ```python
 import math
 import torch
@@ -486,6 +490,8 @@ print(pe.shape)  # [128, 64]
 实际输入一个 batch 时，可以使用 `x + pe[:sequence_length]`，位置向量会沿 batch 维广播。
 
 ### 13.3 使用 PyTorch 多头注意力
+
+完整脚本见：[PyTorch 多头注意力](../codes/lesson_25_26_transformer_attention/02_pytorch_multihead_attention.py)。
 
 ```python
 import torch

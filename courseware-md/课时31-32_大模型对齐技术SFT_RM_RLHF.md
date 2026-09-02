@@ -428,6 +428,8 @@ DPO 的优势：
 
 ### 13.1 构造 SFT 数据
 
+完整脚本见：[构造 SFT 数据](../codes/lesson_31_32_alignment/00_create_sft_jsonl.py)。
+
 ```python
 import json
 
@@ -453,6 +455,8 @@ with open("sft_demo.jsonl", "w", encoding="utf-8") as f:
 
 ### 13.2 奖励模型成对 Loss
 
+完整脚本见：[奖励模型成对 Loss](../codes/lesson_31_32_alignment/01_pairwise_reward_loss.py)。
+
 ```python
 import torch
 import torch.nn.functional as F
@@ -471,6 +475,8 @@ print("ranking accuracy:", accuracy.item())
 Ranking Accuracy 只能判断排序方向，不能说明奖励分数已经校准，也不能替代分领域评测。
 
 ### 13.3 简化的回答区域 Loss Mask
+
+完整脚本见：[回答区域 Loss Mask](../codes/lesson_31_32_alignment/02_answer_loss_mask.py)。
 
 ```python
 import torch
@@ -494,6 +500,8 @@ print(loss)
 `-100` 位置不会参与 Loss。真实因果语言模型还需处理 logits 与 labels 的 shift，使用框架时应确认模型内部是否已经完成。
 
 ### 13.4 手工偏好标注表
+
+完整脚本见：[手工偏好标注表](../codes/lesson_31_32_alignment/03_preference_record.py)。
 
 ```python
 preference = {

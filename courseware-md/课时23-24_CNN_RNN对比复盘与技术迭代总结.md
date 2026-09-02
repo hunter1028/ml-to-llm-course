@@ -367,6 +367,8 @@ CNN 仍然是理解视觉模型的基础，因为卷积、通道、特征图、�
 
 ### 12.1 MLP 与 CNN 对比入口
 
+完整脚本见：[MLP 与 CNN 对比入口](../codes/lesson_23_24_model_evolution/00_mlp_vs_cnn_input.py)。
+
 ```python
 # MLP: 把图片拉平
 mlp = nn.Sequential(
@@ -394,6 +396,8 @@ cnn = nn.Sequential(
 ---
 
 ### 12.2 RNN 与窗口特征对比入口
+
+完整脚本见：[RNN 与窗口特征对比入口](../codes/lesson_23_24_model_evolution/01_rnn_vs_window_features.py)。
 
 ```python
 # 传统 ML 思路：把序列压成统计特征

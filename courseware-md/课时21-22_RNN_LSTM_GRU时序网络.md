@@ -170,6 +170,8 @@ h1 必须先算完 → 才能算 h2 → 才能算 h3
 
 梯度爆炸（Exploding Gradient）表现为 loss 突然变成 NaN、参数暴涨、训练不稳定。RNN 中常用梯度裁剪（Gradient Clipping）限制梯度范数：
 
+完整脚本见：[梯度裁剪最小示例](../codes/lesson_21_22_rnn_lstm_gru/00_gradient_clipping_demo.py)。
+
 ```python
 torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
 ```
@@ -345,6 +347,8 @@ RNN/LSTM/GRU 常见应用：
 ## 12. 代码实操
 
 ### 12.1 GRU 做序列分类
+
+完整脚本见：[GRU 序列分类](../codes/lesson_21_22_rnn_lstm_gru/01_gru_sequence_classification.py)。
 
 ```python
 import torch
