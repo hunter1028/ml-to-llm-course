@@ -6,7 +6,8 @@
 
 ```text
 codes/
-├── lesson_00_intro/              课前导入：两个最小 AI 例子
+├── lesson_00_intro/              两个小 AI 例子
+├── lesson_05_06_ml_basics/       课时 05-06：机器学习基础范式与通用原理
 ├── lesson_07_08_linear_models/   课时 07-08：线性模型理论与实战
 ├── main.py                       代码目录说明入口
 ├── pyproject.toml                Python 依赖配置
@@ -28,7 +29,7 @@ uv sync
 python -m pip install numpy pandas matplotlib scikit-learn
 ```
 
-## 课前导入
+## 两个小 AI 例子
 
 ### 线性回归预测房价
 
@@ -40,6 +41,32 @@ python lesson_00_intro/01_ml_linear_regression.py
 
 ```bash
 python lesson_00_intro/02_dl_mlp_digits.py
+```
+
+## 课时 05-06：机器学习基础范式与通用原理
+
+### 环境检查
+
+```bash
+python lesson_05_06_ml_basics/00_environment_check.py
+```
+
+### 手动划分训练集、验证集和测试集
+
+```bash
+python lesson_05_06_ml_basics/01_manual_train_val_test_split.py
+```
+
+### Baseline 与 Ridge 正则对比
+
+```bash
+python lesson_05_06_ml_basics/02_baseline_and_ridge.py
+```
+
+### 手写 L2 损失
+
+```bash
+python lesson_05_06_ml_basics/03_manual_l2_loss.py
 ```
 
 ## 课时 07-08：线性模型理论与实战
